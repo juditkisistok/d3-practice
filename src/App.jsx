@@ -1,32 +1,27 @@
 import Barplot from "./Barplot";
-
-const data = [
-  { country: "United States", students: 68 },
-  { country: "France", students: 21 },
-  { country: "United Kingdom", students: 21 },
-  { country: "Germany", students: 20 },
-  { country: "Switzerland", students: 13 },
-  { country: "Spain", students: 10 },
-  { country: "Netherlands", students: 9 },
-  { country: "India", students: 9 },
-  { country: "Singapore", students: 8 },
-  { country: "Ireland", students: 8 },
-  { country: "Sweden", students: 7 },
-  { country: "Australia", students: 7 },
-  { country: "Canada", students: 6 },
-  { country: "Finland", students: 5 },
-  { country: "Mexico", students: 4 },
-  { country: "Brazil", students: 4 },
-  { country: "Saudi Arabia", students: 3 },
-  { country: "Romania", students: 3 },
-  { country: "Philippines", students: 3 },
-  { country: "New Zealand", students: 3 },
-];
+import * as d3 from "d3";
+import { width, height, data } from "./Constants";
 
 export default function App() {
+  const axisY = d3
+    .scaleBand()
+    .domain(data.map((d) => d.country))
+    .range([0, height])
+    .padding(0.1);
+
+  const axisX = d3
+    .scaleLinear()
+    .domain([0, d3.max(data, (d) => d.students)])
+    .range([0, width]);
   return (
     <div>
-      <Barplot data={data} />
+      <Barplot
+        data={data}
+        axisY={axisY}
+        axisX={axisX}
+        width={width}
+        height={height}
+      />
     </div>
   );
 }
