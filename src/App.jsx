@@ -20,7 +20,8 @@ export default function App() {
   const axisX = d3
     .scaleLinear()
     .domain([0, d3.max(data, (d) => d.students)])
-    .range([0, innerWidth]);
+    .range([0, innerWidth])
+    .nice();
   return (
     <div>
       <h1>
