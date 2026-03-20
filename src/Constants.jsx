@@ -22,3 +22,6 @@ export const data = [
   { country: "Philippines", students: 3 },
   { country: "New Zealand", students: 3 },
 ];
+export const margin = { top: 20, right: 30, bottom: 30, left: 120 };
+export const innerWidth = width - margin.left - margin.right;
+export const innerHeight = height - margin.top - margin.bottom;
