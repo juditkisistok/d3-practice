@@ -1,4 +1,4 @@
-# React ☙ D3 — Barplot
+# Barplot in D3 & React
 
 A practice project I built for the [D3 ❤️ React course](https://www.react-graph-gallery.com/react-d3-dataviz-course).
 
