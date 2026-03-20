@@ -6,6 +6,7 @@ export default function AxisLeft({ axisY }) {
         <text
           key={country}
           y={axisY(country) + axisY.bandwidth() / 2}
+          x={-12}
           textAnchor="end"
           dominantBaseline="middle"
         >

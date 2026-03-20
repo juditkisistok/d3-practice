@@ -1,5 +1,5 @@
-export const width = 500;
-export const height = 400;
+export const width = 600;
+export const height = 550;
 export const data = [
   { country: "United States", students: 68 },
   { country: "France", students: 21 },

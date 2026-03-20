@@ -1,8 +1,7 @@
-export default function AxisBottom({ axisX, innerWidth }) {
+export default function AxisBottom({ axisX, innerWidth, innerHeight }) {
   const ticks = axisX.ticks(5);
-  console.log(ticks);
   return (
-    <g transform={`translate(0, ${innerWidth})`}>
+    <g transform={`translate(0, ${innerHeight})`}>
       <line x1={0} x2={innerWidth} stroke="black" />
       {ticks.map((tick) => (
         <g key={tick} transform={`translate(${axisX(tick)}, 0)`}>

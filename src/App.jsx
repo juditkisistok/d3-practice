@@ -23,6 +23,7 @@ export default function App() {
     .range([0, innerWidth]);
   return (
     <div>
+      <h1>D3 ❤️ React students around the world</h1>
       <Barplot
         data={data}
         axisY={axisY}

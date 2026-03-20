@@ -8,6 +8,7 @@ export default function Barplot({ data, width, height, axisY, axisX, margin }) {
         <AxisBottom
           axisX={axisX}
           innerWidth={width - margin.left - margin.right}
+          innerHeight={height - margin.top - margin.bottom}
         />
         <AxisLeft axisY={axisY} />
         {data.map((d) => (
@@ -17,7 +18,8 @@ export default function Barplot({ data, width, height, axisY, axisX, margin }) {
             y={axisY(d.country)}
             width={axisX(d.students)}
             height={axisY.bandwidth()}
-            fill="steelblue"
+            fill="#96929c"
+            rx={3}
           />
         ))}
       </g>

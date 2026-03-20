@@ -1,7 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: #f0ede8;
+  font-family: 'DM Mono', monospace;
+}
+
+
+svg text {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  fill: #6b7280;
+  letter-spacing: 0.01em;
+}
+
+svg line {
+  stroke: #e8e4df;
+  stroke-width: 1;
 }
