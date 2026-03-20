@@ -1,9 +1,15 @@
-import * as d3 from "d3";
+import AxisBottom from "./assets/AxisBottom";
+import AxisLeft from "./AxisLeft";
 
 export default function Barplot({ data, width, height, axisY, axisX, margin }) {
   return (
     <svg width={width} height={height}>
       <g transform={`translate(${margin.left}, ${margin.top})`}>
+        <AxisBottom
+          axisX={axisX}
+          innerWidth={width - margin.left - margin.right}
+        />
+        <AxisLeft axisY={axisY} />
         {data.map((d) => (
           <rect
             key={d.country}
