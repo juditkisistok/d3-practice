@@ -1,6 +1,6 @@
 import Barplot from "./Barplot";
 import * as d3 from "d3";
-import "./App.css";
+import "../App.css";
 import {
   innerWidth,
   innerHeight,

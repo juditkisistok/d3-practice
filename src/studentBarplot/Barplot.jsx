@@ -1,4 +1,4 @@
-import AxisBottom from "./assets/AxisBottom";
+import AxisBottom from "./AxisBottom";
 import { useState } from "react";
 
 export default function Barplot({ data, width, height, axisY, axisX, margin }) {

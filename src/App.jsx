@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./Home.jsx";
-import StudentBarplot from "./StudentBarplot.jsx";
+import StudentBarplot from "./studentBarplot/StudentBarplot.jsx";
 
 export default function App() {
   return (
