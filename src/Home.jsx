@@ -16,7 +16,7 @@ export default function Home() {
           }}
         >
           <path
-            fill="#c26b5a"
+            fill="#6b0040"
             d="M12 21.6C6.4 16 1 11.3 1 7.2 1 3.4 4.1 2 6.3 2c1.3 0 4.2.5 5.7 4.5C13.6 2.5 16.5 2 17.7 2c2.5 0
   5.3 1.6 5.3 5.2 0 4.1-5.1 8.6-11 14.4z"
           />
@@ -31,6 +31,11 @@ export default function Home() {
         <ul>
           <li>
             <Link to="/barplot">Barplot: number of students per country</Link>
+          </li>
+          <li>
+            <Link to="/economist-barplot">
+              Barplot: number of outbreaks per disease
+            </Link>
           </li>
         </ul>
       </nav>
