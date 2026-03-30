@@ -30,7 +30,7 @@ h1 {
   font-weight: 400;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #9ca3af;
+  color: #787068;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -73,7 +73,7 @@ svg > g > g:hover > text {
 .tooltip {
   font-family: "Caveat", cursive;
   font-size: 20px;
-  fill: #c26b5a;
+  fill: #6b0040;
   dominant-baseline: middle;
 }
 
@@ -82,7 +82,7 @@ svg > g > g:hover > text {
 }
 
 .tooltip-line {
-  stroke: #c26b5a;
+  stroke: #6b0040;
   stroke-width: 1.5;
   stroke-linecap: round;
 }
@@ -90,4 +90,91 @@ svg > g > g:hover > text {
 svg line {
   stroke: #e8e4df;
   stroke-width: 1;
+}
+
+/* home page */
+
+p {
+  margin: 0;
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #9a9490;
+  text-transform: uppercase;
+}
+
+p a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #ccc7c0;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+p a:hover {
+  text-decoration-color: #6b0040;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 340px;
+  counter-reset: chart;
+}
+
+nav li {
+  counter-increment: chart;
+  border-bottom: 1px solid #ccc7c0;
+}
+
+nav li:first-child {
+  border-top: 1px solid #ccc7c0;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+  text-decoration: none;
+  color: #5a6068;
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+nav a::before {
+  content: counter(chart, decimal-leading-zero);
+  font-size: 10px;
+  color: #a09a93;
+  flex-shrink: 0;
+  transition: color 0.25s ease;
+}
+
+nav a::after {
+  content: "→";
+  margin-left: auto;
+  color: #6b0040;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: all 0.25s ease;
+}
+
+nav a:hover {
+  color: #464d4a;
+  padding-left: 6px;
+}
+
+nav a:hover::before {
+  color: #6b0040;
+}
+
+nav a:hover::after {
+  opacity: 1;
+  transform: translateX(0);
 }
