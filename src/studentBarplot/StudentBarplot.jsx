@@ -1,6 +1,7 @@
 import Barplot from "./Barplot";
 import * as d3 from "d3";
 import "../App.css";
+import { Link } from "react-router-dom";
 import {
   innerWidth,
   innerHeight,
@@ -52,6 +53,7 @@ export default function StudentBarplot() {
         height={height}
         margin={margin}
       />
+      <Link to="/">← back</Link>
     </div>
   );
 }

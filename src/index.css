@@ -103,6 +103,20 @@ p {
   text-transform: uppercase;
 }
 
+div > a {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #9a9490;
+  transition: color 0.2s ease;
+}
+
+div > a:hover {
+  color: #6b0040;
+}
+
 p a {
   color: inherit;
   text-decoration: underline;
