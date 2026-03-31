@@ -9,3 +9,7 @@ export const data = [
   { count: 18, name: "Vaccinia" },
   { count: 54, name: "Brucella" },
 ];
+
+export const width = 500;
+export const height = 400;
+export const barColor = "rgb(7, 111, 162)";
