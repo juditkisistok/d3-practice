@@ -1,4 +1,4 @@
-export default function AxisTop({ axisX, innerWidth, innerHeight }) {
+export default function AxisTop({ axisX, innerHeight }) {
   const ticks = axisX.ticks(10);
   return (
     <g>
