@@ -3,6 +3,7 @@ import "./economistBarplot.css";
 import { data, width, height, barColor } from "./Constants";
 import AxisTop from "./AxisTop";
 import EconomistHeader from "./EconomistHeader";
+import { Link } from "react-router-dom";
 
 export default function EconomistBarplot() {
   // sort data by count in descending order
@@ -80,6 +81,7 @@ export default function EconomistBarplot() {
         </p>
         <p className="source">The Economist</p>
       </div>
+      <Link to="/">← back</Link>
     </div>
   );
 }

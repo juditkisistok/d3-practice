@@ -41,6 +41,9 @@
 }
 
 .student-barplot > a {
+  position: fixed;
+  bottom: 32px;
+  left: 32px;
   font-family: "DM Mono", monospace;
   font-size: 11px;
   letter-spacing: 0.08em;

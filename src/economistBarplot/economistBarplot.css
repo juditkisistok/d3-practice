@@ -32,3 +32,20 @@
 .economist-barplot .source-box {
   margin-top: 0;
 }
+
+.economist-barplot > a {
+  position: fixed;
+  bottom: 32px;
+  left: 32px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #9a9490;
+  transition: color 0.2s ease;
+}
+
+.economist-barplot > a:hover {
+  color: rgb(229, 1, 28);
+}
