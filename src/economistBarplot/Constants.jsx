@@ -10,6 +10,6 @@ export const data = [
   { count: 54, name: "Brucella" },
 ];
 
-export const width = 500;
+export const width = 700;
 export const height = 400;
 export const barColor = "rgb(7, 111, 162)";
